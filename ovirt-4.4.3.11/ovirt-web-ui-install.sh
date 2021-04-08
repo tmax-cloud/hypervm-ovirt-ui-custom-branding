@@ -1,4 +1,4 @@
-BRANDING_IMAGE_DIR=${TARGET_VERSION_DIR}hypervm.brand/
+export BRANDING_IMAGE_DIR=./hypervm.brand/
 
 sudo cp -i ${BRANDING_IMAGE_DIR}favicon.ico /usr/share/ovirt-web-ui/branding/images/favicon.ico
 sudo cp -i ${BRANDING_IMAGE_DIR}favicon-16x16.png /usr/share/ovirt-web-ui/branding/images/favicon-16x16.png

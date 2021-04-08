@@ -42,6 +42,8 @@ Select your ovirt engine version properly.
 
     TARGET_VERSION_DIR=./<ovirt version>/ # example: TARGET_VERSION_DIR=./ovirt-4.4.3.11/
 
+    cd TARGET_VERSION_DIR
+
     # run install ovirt-web-ui-script
-    sudo sh ${TARGET_VERSION_DIR}ovirt-web-ui-install.sh
+    sudo sh ./ovirt-web-ui-install.sh
     ```
