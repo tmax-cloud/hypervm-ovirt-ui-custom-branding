@@ -1,0 +1,53 @@
+/********************************************
+
+  ovirt-engine frontend brand
+
+  based on the Application branding sections from:
+    ovirt-engine/frontend/brands/ovirt-brand/src/main/sass/_branding.scss
+
+*********************************************/
+
+:root {
+  --ovirt-masthead-height: 60px;
+  --ovirt-masthead-topborder-size: 4px;
+}
+
+/* --- Application: masthead --- */
+.obrand_masthead {
+  border-top: var(--ovirt-masthead-topborder-size) solid #00659c;
+  height: var(--ovirt-masthead-height);
+
+  background-image: url(images/ovirt_masthead_bg.png);
+  background-size: cover;
+}
+
+.obrand_mastheadLogo {
+  width: 97px;
+  height: 37px;
+  position: relative;
+  top: 1px;
+  border: 0px;
+  background-image: url(images/ovirt_middle_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* --- Application: About Dialog --- */
+.obrand_aboutBackground {
+  width: 565px;
+  height: 355px;
+  background-image: url(images/ovirt_about_bg.png);
+}
+
+.obrand_aboutApplicationLogo {
+  display: block;
+  width: 80px;
+  height: 30px;
+  border: 0px;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  background-image: url(images/ovirt_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

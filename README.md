@@ -1,14 +1,21 @@
 # hypervm-ovirt-ui-custom-branding
-ovirt ui custom branding repo
+ovirt ui custom branding repo.
 
-## How to install
+## Purpose
+1. ovirt webadmin UI branding
+2. ovirt VM portal UI branding
 
-### Step1 - Prepare files
+## Prepare Installation
+prepare branding install files
+
+- Command:
 ```sh
 git clone https://github.com/tmax-cloud/hypervm-ovirt-ui-custom-branding.git
 ```
 
-### Step2 - Copy Target Branding Directory and Create a link
+## How to install - ovirt webadmin UI branding
+
+### Copy Target Branding Directory and Create a link
 
 Copy hypervm branding files to ovirt engine installed directory.
 Select your ovirt engine version properly.
@@ -17,10 +24,27 @@ Select your ovirt engine version properly.
     ```sh
     cd <git cloned directory>
 
-    BRANDING_DIR=./<ovirt version>/hypervm.brand/
-    # Example: BRANDING_DIR=./ovirt-4.4.3.11/hypervm.brand/, check if the target directory is already exists, then backup and clear it.
+    TARGET_VERSION_DIR=./<ovirt version>/ # example: TARGET_VERSION_DIR=./ovirt-4.4.3.11/
+    BRANDING_DIR=${TARGET_VERSION_DIR}hypervm.brand/
 
     sudo cp -r ${BRANDING_DIR} /usr/share/ovirt-engine/brands/
 
     sudo ln -s /usr/share/ovirt-engine/brands/hypervm.brand/ /etc/ovirt-engine/branding/21-hypervm.brand
+    ```
+
+## How to install - ovirt VM portal UI branding
+
+### Copy Target Branding files
+
+- Command Exmaple:
+    ```sh
+    cd <git cloned directory>
+
+    TARGET_VERSION_DIR=./<ovirt version>/ # example: TARGET_VERSION_DIR=./ovirt-4.4.3.11/
+    BRANDING_DIR=${TARGET_VERSION_DIR}hypervm.brand/
+
+    BRANDING_DIR=${BRANDING_DIR}images/
+
+    # run install ovirt-web-ui-script
+    sudo sh ${TARGET_VERSION_DIR}ovirt-web-ui-install.sh
     ```
