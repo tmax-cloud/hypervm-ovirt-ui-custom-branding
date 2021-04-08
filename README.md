@@ -17,10 +17,10 @@ Select your ovirt engine version properly.
     ```sh
     cd <git cloned directory>
 
-    BRANDING_DIR=/<ovirt version>/hypervm.brand/
-    # Example: BRANDING_DIR=/ovirt-4.4.3.11/hypervm.brand, check if the target directory is already exists, then backup and clear it.
+    BRANDING_DIR=./<ovirt version>/hypervm.brand/
+    # Example: BRANDING_DIR=./ovirt-4.4.3.11/hypervm.brand/, check if the target directory is already exists, then backup and clear it.
 
-    sudo cp BRANDING_DIR /usr/share/ovirt-engine/brands
+    sudo cp -r ${BRANDING_DIR} /usr/share/ovirt-engine/brands/
 
     sudo ln -s /usr/share/ovirt-engine/brands/hypervm.brand/ /etc/ovirt-engine/branding/21-hypervm.brand
     ```
