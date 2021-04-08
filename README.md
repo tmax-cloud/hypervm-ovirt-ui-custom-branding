@@ -41,9 +41,6 @@ Select your ovirt engine version properly.
     cd <git cloned directory>
 
     TARGET_VERSION_DIR=./<ovirt version>/ # example: TARGET_VERSION_DIR=./ovirt-4.4.3.11/
-    BRANDING_DIR=${TARGET_VERSION_DIR}hypervm.brand/
-
-    BRANDING_DIR=${BRANDING_DIR}images/
 
     # run install ovirt-web-ui-script
     sudo sh ${TARGET_VERSION_DIR}ovirt-web-ui-install.sh
