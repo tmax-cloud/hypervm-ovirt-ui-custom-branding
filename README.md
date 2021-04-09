@@ -11,7 +11,9 @@ prepare branding install files and clean original brand directory and symlink
 - Command:
 ```sh
 git clone https://github.com/tmax-cloud/hypervm-ovirt-ui-custom-branding.git
-rm /etc/ovirt-engine/branding/00-ovirt.brand/ # remove symlink
+
+# remove symlink
+rm /etc/ovirt-engine/branding/00-ovirt.brand/
 
 # backup and remove original branding directory
 rm /usr/share/ovirt-engine/brands/ovirt.brand/
