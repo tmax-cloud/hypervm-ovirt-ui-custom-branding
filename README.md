@@ -53,3 +53,16 @@ Select your ovirt engine version properly.
     # run install ovirt-web-ui-script
     sudo sh ./ovirt-web-ui-install.sh
     ```
+
+## After install
+
+Please restart ovirt-engine
+
+- Command:
+
+```sh
+sudo systemctl restart ovirt-engine
+
+# and check ovirt-engine status
+sudo systemctl status ovirt-engine
+```
