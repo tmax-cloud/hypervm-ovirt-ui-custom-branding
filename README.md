@@ -6,11 +6,15 @@ ovirt ui custom branding repo.
 2. ovirt VM portal UI branding
 
 ## Prepare Installation
-prepare branding install files
+prepare branding install files and clean original brand directory and symlink
 
 - Command:
 ```sh
 git clone https://github.com/tmax-cloud/hypervm-ovirt-ui-custom-branding.git
+rm /etc/ovirt-engine/branding/00-ovirt.brand/ # remove symlink
+
+# backup and remove original branding directory
+rm /usr/share/ovirt-engine/brands/ovirt.brand/
 ```
 
 ## How to install - ovirt webadmin UI branding
