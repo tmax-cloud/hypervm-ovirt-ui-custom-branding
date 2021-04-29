@@ -13,10 +13,10 @@ prepare branding install files and clean original brand directory and symlink
 git clone https://github.com/tmax-cloud/hypervm-ovirt-ui-custom-branding.git
 
 # remove symlink
-rm /etc/ovirt-engine/branding/00-ovirt.brand/
+rm -rf /etc/ovirt-engine/branding/00-ovirt.brand/
 
 # backup and remove original branding directory
-rm /usr/share/ovirt-engine/brands/ovirt.brand/
+rm -rf /usr/share/ovirt-engine/brands/ovirt.brand/
 ```
 
 ## How to install - ovirt webadmin UI branding
@@ -48,7 +48,7 @@ Select your ovirt engine version properly.
 
     TARGET_VERSION_DIR=./<ovirt version>/ # example: TARGET_VERSION_DIR=./ovirt-4.4.3.11/
 
-    cd TARGET_VERSION_DIR
+    cd ${TARGET_VERSION_DIR}
 
     # run install ovirt-web-ui-script
     sudo sh ./ovirt-web-ui-install.sh
