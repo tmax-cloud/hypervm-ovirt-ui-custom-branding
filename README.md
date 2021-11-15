@@ -1,4 +1,7 @@
+
 # hypervm-ovirt-ui-custom-branding
+OUTDATED, Moved to ovirt-engine(https://github.com/tmax-cloud/ovirt-engine) and ovirt-web-ui(https://github.com/tmax-cloud/ovirt-web-ui)
+
 ovirt ui custom branding repo.
 
 ## Purpose
